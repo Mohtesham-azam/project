@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#057af7 ,#049ccf,#0fdbb9);
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: midnightblue;
+}
+.container{
+    position: relative;
+    border-radius: 5px;
+    background-color: #63e674;
+}
+input{
+    width: 100%;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    outline: none;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    outline: none;
+    background-color: cornflowerblue;
+}
+button:active{
+    opacity: 0.85;
+}
+.col{
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    align-content: center;
+}
+.icon img{
+    position: absolute;
+    padding: 15px 5px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.vl{
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #dddddd;
+    height: 330px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.bottom{
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+@media (min-width: 1024px){
+    .container{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 1023px) and (min-width: 761px){
+    .container{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .logo img{
+        width: 80%;
+    }
+}
+@media (max-width: 760px){
+    .container{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .col{
+        width: 100%;
+    }
+    .vl{
+        display: none;
+    }
+    .logo img{
+        width: 70%;
+    }
+}
+@media (max-width: 480px){
+    .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .col{
+        width: 100%;
+    }
+    .vl{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    .logo img{
+        width: 70%;
+    }
+}
